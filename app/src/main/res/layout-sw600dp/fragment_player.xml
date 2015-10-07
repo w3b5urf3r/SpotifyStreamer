@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="@dimen/abc_action_bar_content_inset_material">
+
+    <TextView
+        android:id="@+id/player_artist_name_tv"
+        style="@style/label_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Artist Name" />
+
+    <TextView
+        android:id="@+id/player_album_name"
+        style="@style/label_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Abum_Name" />
+    <com.androidnanodegree.mlopez.spotifystreamer.gui.SquareImage
+        android:id="@+id/player_album_image"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="10"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/player_song_title"
+        style="@style/label_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Abum_Name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/abc_action_button_min_height_material"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/player_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:progress="50" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/player_progress"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                tools:text="0:00"/>
+            <View
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="1dp">
+
+            </View>
+            <TextView
+                android:id="@+id/track_duration"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                tools:text="0:00"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_button_min_height_material"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backward_button"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_previous" />
+
+        <ImageView
+            android:id="@+id/play_pause_button"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/play_pause_selector" />
+
+        <ImageView
+            android:id="@+id/forward_button"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_next" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="@dimen/listitem_square_height_width"
+        android:padding="@dimen/abc_list_item_padding_horizontal_material"
+        android:layout_height="@dimen/listitem_square_height_width">
+
+        <ImageView
+            android:id="@+id/artist_thumbnail"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/artist_name_tv"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="@dimen/abc_text_size_title_material"/>
+
+
+</LinearLayout>

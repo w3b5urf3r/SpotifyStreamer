@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_list_view">#eeeeee</color>
+    <!--<color name="primary_color">#acddff</color>-->
+    <color name="accent_color">#339b8e</color>
+    <!--<color name="primary_dark_color">#AAccDD</color>-->
+</resources>

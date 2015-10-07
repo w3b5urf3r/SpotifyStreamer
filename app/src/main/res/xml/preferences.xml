@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="iso_code"
+    android:persistent="false"
+    android:title="Iso Code">
+    <ListPreference
+        android:key="@string/sp_iso_code"
+        android:title="Iso Code List" />
+</PreferenceScreen>
