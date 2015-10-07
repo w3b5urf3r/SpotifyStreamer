@@ -1,0 +1,12 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+SpotifyStreaner.iml
+gradlew
+gradlew.bat
+.idea/
+._.DS_Store
